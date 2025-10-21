@@ -391,6 +391,34 @@ body {
     max-width: 500px;
 }
 
+.contact {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--background);
+    padding: 4rem 10%;
+}
+
+.contact-info {
+    background: var(--background);
+    padding: 3rem 4rem;
+    border-radius: 25px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    max-width: 1500px;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+
 /* responsive design */
 /* Laptop */
 @media (max-width: 1366px) {
