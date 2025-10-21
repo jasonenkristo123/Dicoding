@@ -19,6 +19,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--background);
+    height: 6000px;
 }
 
 .nav-list {
@@ -142,7 +143,7 @@ body {
     background-color: #5848f6;
 }
 
-.about {
+.about .dream {
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -152,7 +153,7 @@ body {
     width: 100%;
 }
 
-.about .row {
+.row {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,18 +166,18 @@ body {
     width: 100%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.about .row:hover {
+.row:hover {
     transform: translateY(-8px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
 }
-.about-img {
+.about-img, .dream-img {
     flex: 0 0 20rem;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
-.about-img img {
+.about-img img, .dream-img img {
     padding: 1.5rem;
     background: rgba(255, 255, 255, 0.5);
     width: 100%;
@@ -324,7 +325,7 @@ body {
 
 /* responsive design */
 /* Laptop */
-@media (max-width: 1200px) {
+@media (max-width: 1366px) {
     html {
         font-size: 85%;
     }
