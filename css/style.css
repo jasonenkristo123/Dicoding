@@ -380,6 +380,15 @@ body {
 .dream-content h2 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    color: var(--text-dark);
+    text-align: center;
+}
+
+.dream-content p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: justify;
+    max-width: 500px;
 }
 
 /* responsive design */
