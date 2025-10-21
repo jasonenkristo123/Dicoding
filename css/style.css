@@ -418,6 +418,53 @@ body {
     margin-bottom: 2rem;
 }
 
+.contact h2 span {
+    color: var(--primary);
+}
+
+.contact-info h2 {
+    font-size: 1rem;
+    font-weight: medium;
+}
+
+.contact-info p {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+.contact-info ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info ul li {
+    display: flex;
+    font-size: normal;
+    gap: 1rem;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.contact-form {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
 
 /* responsive design */
 /* Laptop */
