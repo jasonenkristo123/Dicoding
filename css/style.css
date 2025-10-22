@@ -19,7 +19,6 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--background);
-    height: 5000px;
 }
 
 .nav-list {
@@ -391,6 +390,14 @@ body {
     max-width: 500px;
 }
 
+.section-title {
+    grid-column: 1 / -1;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
 .contact {
     width: 100%;
     min-height: 100vh;
@@ -401,29 +408,35 @@ body {
     padding: 4rem 10%;
 }
 
-.contact-info {
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background: var(--background);
+    gap: 2.5rem;
     padding: 3rem 4rem;
-    border-radius: 25px;
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: center;
-    gap: 4rem;
-    max-width: 1500px;
+    width: 100%;
+    max-width: 1000px;
 }
 
-.contact h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
+.contact-info, .contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    background: var(--background);
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
 }
+
 
 .contact h2 span {
     color: var(--primary);
 }
 
 .contact-info h2 {
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: medium;
 }
 
@@ -449,22 +462,48 @@ body {
 
 .socials {
     display: flex;
-    justify-content: center;
     gap: 2rem;
     margin-top: 1.5rem;
 }
 
-.contact-form {
-    display: flex;
-    gap: 2rem;
-    margin-top: 1.5rem;
+.socials a {
+    color: var(--text-dark);
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: var(--background);
 }
 
 .form-group {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
 }
 
+.btn-submit {
+    background: var(--primary);
+    color: var(--secondary);
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    transition: 0.3s;
+    font-size: 1rem;
+}
+
+.footer {
+    background: var(--primary);
+    text-align: center;
+    margin: 0;
+    padding: 1rem 0;
+    color: var(--secondary);
+}
 
 /* responsive design */
 /* Laptop */
